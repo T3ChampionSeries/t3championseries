@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+.title{
+    color:black;
+    padding-top: 150px;
+    font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+.date{
+    font-family: 'Exo 2', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    color: red;
+    margin-top: 35px;
+    margin-bottom: 28px;
+}
+
+.image{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+.image>img{
+    width: 100%;
+    height: auto;
+}
+
+.content>p{
+    font-family: 'Exo 2', sans-serif;
+    color:black;
+}
+
+.content{
+    font-family: 'Exo 2', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+}

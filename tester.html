@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>T3 League</title>
+    <link rel="icon" type="image" href="/src/icon.png">
+    <link rel="stylesheet" href="footer.css"/>
+    <link rel="stylesheet" href="tester.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    
+</head>
+<body style="background-color:#081215; color:white;">
+    <!--<iframe src="https://challonge.com/SummerShowdown2022/module"
+     width="60%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>-->
+
+     <!--Responsive Navigation Bar
+        https://codepen.io/hitensharma/pen/dybryGE-->
+        <script>
+            (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    $("nav ul li a:not(:only-child)").click(function(e) {
+      $(this).siblings(".nav-dropdown").toggle();
+      $(".nav-dropdown").not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $("html").click(function() {
+      $(".nav-dropdown").hide();
+    });
+    $("#nav-toggle").click(function() {
+      $("nav ul").toggle();
+    });
+    // Hamburger to X toggle
+    document.querySelector("#nav-toggle").addEventListener("click", function() {
+      this.classList.toggle("active");
+    });
+  }); // end DOM ready
+})(jQuery); // end jquery
+        </script>
+        <section class="navigation">
+            <div class="nav-container">
+              <div class="brand"><a href="index.html"><img src="src/icon.png" style="width:60px; padding-top: 5px;"></a></div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span>
+                </span></a></div>
+                <ul class="nav-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="bracket.html">bracket</a></li>
+                  <li><a href="newranking.html">rankings</a></li>
+                    <li><a href="#!">about</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="staff.html">management</a></li>
+                          </ul></li>
+                    <li><a style="line-height: 10px; padding-top: 17px;" href="https://discord.gg/WFdshknwvv" class="discox"><img src="/src/discord.png" style="width: 100px; height: 35px;"></a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+    <!--Responsive Navigation Bar Ends-->
+    
+    <div class="home-title">
+        <img src="/src/junebanner.jpg" class="webimg">
+        <img src="/src/squarebanner.jpg" class="mobileimg">
+    </div>
+
+    <div class="news">
+        <div class="news-title">
+        NEWS & EVENTS
+        </div>
+        <div class="hr"> 
+        </div>
+    </div>
+    
+    <!--News Articles-->
+    <div class="articles-box">
+        <!-- Article 1 Start-->
+        <div class="article-one">
+            <div class="article-one-image">
+                <img src="/src/banner.jpg">
+            </div>
+            <div class="article-one-title">
+                <a href="/article.html">SIGNUP CLOSED FOR SUMMER SHOWDOWN 2022</a>
+            </div>
+            <div class="article-one-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam ea. Numquam quia animi esse necessitatibus eligendi, itaque, sint quam dolorem veritatis consequatur, magnam maxime corporis rem? Aliquam, qui magnam.
+            </div>
+            <div class="article-one-read">
+                <a href="/article.html">Read more →</a>
+            </div>
+            <div class="article-one-date">
+                22 Jul, 2022
+            </div>
+
+        </div>
+        <!-- Article 1 End-->
+        <!-- Article 2 Start-->
+        <div class="article-one">
+            <div class="article-one-image">
+                <img src="/src/banner.jpg">
+            </div>
+            <div class="article-one-title">
+                <a href="/page2">OFFICIAL LAUNCH OF SUMMER SHOWDOWN 2022</a>
+            </div>
+            <div class="article-one-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam ea. Numquam quia animi esse necessitatibus eligendi, itaque, sint quam dolorem veritatis consequatur, magnam maxime corporis rem? Aliquam, qui magnam.
+            </div>
+            <div class="article-one-read">
+                <a href="/page2">Read more →</a>
+            </div>
+            <div class="article-one-date">
+                08 Jul, 2022
+            </div>
+
+        </div>
+        <!-- Article 2 End-->
+
+
+    </div>
+        <!--Footer Start-->
+        <script src="https://kit.fontawesome.com/a2797de97d.js" crossorigin="anonymous"></script>
+        <div class="footer">
+            <div class="icons">
+                <a href="https://discord.gg/WFdshknwvv" class="fa-brands fa-discord fa-2xl"></i></a>
+                <a href="https://twitter.com/T3League2022" class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="https://www.twitch.tv/lemooons1_1" class="fa-brands fa-twitch fa-2xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCcezXBNJGCLRmtCEFor0mzw" class="fa-brands fa-youtube fa-2xl"></i></a>
+                
+            </div>
+            <div class="footer-text">
+                T3 League © 2022
+            </div>
+        
+        </div>
+        <!--Footer End-->
+
+</body>
+</html>

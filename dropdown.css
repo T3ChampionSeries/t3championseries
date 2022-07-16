@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&family=Manrope&family=Potta+One&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+
+.dropdown {
+    font-family: 'Anek Latin', sans-serif;
+  color: black;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 3px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.fa-angle-down {
+  color: black;
+  position: relative;
+  top: 2px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.rotate-dropdown-arrow {
+  transform: rotate(-180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+  display: none;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-top: 8px;
+  width: 160px;
+  padding: 10px;
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.3);
+  background: #fafafa;
+  transform-origin: top left;
+  margin-top: 150px;
+}
+
+.dropdown-menu span {
+    font-family: 'Anek Latin', sans-serif;
+    color: black;
+  padding: 10px;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu span:hover {
+  background: #eee;
+}
+
+#openDropdown:checked + .dropdown-menu {
+  display: flex;
+  animation: openDropDown 0.4s ease 0s 1 forwards;
+}
+
+@keyframes openDropDown {
+  from { transform: rotateX(50deg); }
+  to { transform: rotateX(0deg); }
+}

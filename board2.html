@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>T3 League</title>
+    <link rel="icon" type="image" href="/src/icon.png">
+    <link rel="stylesheet" href="nav.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+    <link rel="stylesheet" href="board.css"/>
+    <link rel="stylesheet" href="board2.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body style="background-color:#081215; color:white;">
+    <!--Aleta-->
+    <div id="mydiv">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="mydivheader"><img src="src/aleta.png" id="character-img"></div>
+    <!--Cristina-->
+    </div>
+    <div id="mydiv2">
+        <div id="mydivheader2"><img src="src/cristina.png" id="character-img"></div>
+    </div>
+    <button onclick="removeGrid()">CLear</button>
+    <script src="board.js"></script>
+    
+    <!--Map iFrame-->
+
+    <div id="canvasContainer">
+        <main>
+            <div class="left-block">
+              <div class="colors">
+                <button type="button" value="#0000ff"></button>
+                <button type="button" value="#009fff"></button>
+                <button type="button" value="#0fffff"></button>
+                <button type="button" value="#bfffff"></button>
+                <button type="button" value="#000000"></button>
+                <button type="button" value="#333333"></button>
+                <button type="button" value="#666666"></button>
+                <button type="button" value="#999999"></button>
+                <button type="button" value="#ffcc66"></button>
+                <button type="button" value="#ffcc00"></button>
+                <button type="button" value="#ffff00"></button>
+                <button type="button" value="#ffff99"></button>
+                <button type="button" value="#003300"></button>
+                <button type="button" value="#555000"></button>
+                <button type="button" value="#00ff00"></button>
+                <button type="button" value="#99ff99"></button>
+                <button type="button" value="#f00000"></button>
+                <button type="button" value="#ff6600"></button>
+                <button type="button" value="#ff9933"></button>
+                <button type="button" value="#f5deb3"></button>
+                <button type="button" value="#330000"></button>
+                <button type="button" value="#663300"></button>
+                <button type="button" value="#cc6600"></button>
+                <button type="button" value="#deb887"></button>
+                <button type="button" value="#aa0fff"></button>
+                <button type="button" value="#cc66cc"></button>
+                <button type="button" value="#ff66ff"></button>
+                <button type="button" value="#ff99ff"></button>
+                <button type="button" value="#e8c4e8"></button>
+                <button type="button" value="#ffffff"></button>
+              </div>
+              <div class="brushes">
+                <button type="button" value="1"></button>
+                <button type="button" value="2"></button>
+                <button type="button" value="3"></button>
+                <button type="button" value="4"></button>
+                <button type="button" value="5"></button>
+              </div>
+              <div class="buttons">
+                <button id="clear" type="button">Clear</button>
+              </div>
+            </div>
+            
+            <div class="right-block">
+              <canvas id="paint-canvas" width="1000" height="820" style="background: url('./src/escort.png'); background-repeat: no-repeat; background-size: contain; ></canvas>
+            </div>
+          </main>
+
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.js"></script>
+    <script src="arrow.js"></script>
+    <script src="boardjs.js"></script>
+    <!--Footer Start
+    <script src="https://kit.fontawesome.com/a2797de97d.js" crossorigin="anonymous"></script>
+        <div class="footer">
+            <div class="icons">
+                <a href="https://discord.gg/WFdshknwvv" class="fa-brands fa-discord fa-2xl"></i></a>
+                <a href="https://twitter.com/T3League2022" class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="https://www.twitch.tv/lemooons1_1" class="fa-brands fa-twitch fa-2xl"></i></a>
+            </div>
+            <div class="footer-text">
+                T3 League © 2022
+            </div>
+        
+        </div>
+    Footer End-->
+</body>
+</html>

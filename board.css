@@ -1,0 +1,39 @@
+#mydiv {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+  }
+  
+  #mydivheader {
+    cursor: move;
+    z-index: 10;
+    color: #fff;
+  }
+
+  #character-img{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+
+  #mydiv2{
+    top: 10px;
+    left: 65px;
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+  }
+
+  #mydivheader2 {
+    cursor: move;
+    z-index: 10;
+    color: #fff;
+  }
+
+  #mapid{
+    position: absolute;
+    margin-left: 400px;
+    width: 850px;
+  }

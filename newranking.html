@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>T3 League</title>
+    <link rel="icon" type="image" href="/src/icon.png">
+    <link rel="stylesheet" href="tester.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+    <link rel="stylesheet" href="ranking.css"/>
+    <link rel="stylesheet" href="dropdown.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    
+</head>
+<body style="background-color:#dbdbdb;">
+    <!--<iframe src="https://challonge.com/SummerShowdown2022/module"
+     width="60%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>-->
+
+     <!--Responsive Navigation Bar
+        https://codepen.io/hitensharma/pen/dybryGE-->
+        <script>
+            (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    $("nav ul li a:not(:only-child)").click(function(e) {
+      $(this).siblings(".nav-dropdown").toggle();
+      $(".nav-dropdown").not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $("html").click(function() {
+      $(".nav-dropdown").hide();
+    });
+    $("#nav-toggle").click(function() {
+      $("nav ul").toggle();
+    });
+    // Hamburger to X toggle
+    document.querySelector("#nav-toggle").addEventListener("click", function() {
+      this.classList.toggle("active");
+    });
+  }); // end DOM ready
+})(jQuery); // end jquery
+        </script>
+        <section class="navigation">
+            <div class="nav-container">
+              <div class="brand"><a href="index.html"><img src="src/icon.png" style="width:60px; padding-top: 5px;"></a></div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span>
+                </span></a></div>
+                <ul class="nav-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="bracket.html">bracket</a></li>
+                  <li><a href="newranking.html">rankings</a></li>
+                    <li><a href="#!">about</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="staff.html">management</a></li>
+                          </ul></li>
+                    <li><a style="line-height: 10px; padding-top: 17px;" href="https://discord.gg/WFdshknwvv" class="discox"><img src="/src/discord.png" style="width: 100px; height: 35px;"></a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+
+    <!--Responsive Navigation Bar Ends-->
+    <div class="t3leaguerankings">
+        T3 League Rankings
+        <hr>
+    </div>
+    <!--Dropdown-->
+    <div class="dropdown-container">
+        <label for="openDropdown" class="dropdown">
+          2022 SEASON
+          <i class="fas fa-angle-down"></i>
+        </label>
+        
+        <input type="checkbox" id="openDropdown" hidden>
+      
+        <div class="dropdown-menu">
+          <a href="newranking.html"><span>2022 SEASON</span></a>
+          <a><span>2023 SEASON</span></a>
+        </div>
+      </div>
+      <script src="nav.js"></script>
+      <!--Dropdown end-->
+        <div class="tableclass">
+            <table cellspacing="0" cellpadding="0" style="width:96%">
+            <thead>
+                <tr>
+                    <th style="width: 60px;">Rank</th>
+                    <th style="text-align:left; width: 50px;">Team</th>
+                    <th style="text-align:left;"></th>
+                    <th style="width: 60px;">PTS</th>
+                    <th style="width: 80px;">RGN</th>
+                    <th style="width: 60px;">W</th>
+                    <th style="width: 60px;">L</th>
+                    <th style="width: 80px;">DIFF</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rank-table">1</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">T3 League</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray">NA</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-table">2</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">B4</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray">ASIA</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-table">3</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">Arena Masters</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray">EU</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-table">4</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">OneRyx</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray">NA</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-table">5</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">Tribe T3</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray">NA</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-table">6</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">RPG Vietnam</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray">ASIA</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-table">7</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">Gods of Shinobi</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray">NA</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-table">8</td>
+                    <td><img src="src/icon.png" class="team-icon"></td>
+                    <td class="team-table">DK Esports</td>
+                    <td class="win-table">10</td>
+                    <td class="lose-table" style="color: lightslategray;">NA</td>
+                    <td class="point-table">9</td>
+                    <td class="point-table">2</td>
+                    <td class="diff-table" style="color:rgb(7, 180, 7)">+3</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="empty-box">
+            <br>
+        </div>
+            
+
+
+    <!--Footer Start-->
+    <script src="https://kit.fontawesome.com/a2797de97d.js" crossorigin="anonymous"></script>
+        <div class="footer">
+            <div class="icons">
+                <a href="https://discord.gg/WFdshknwvv" class="fa-brands fa-discord fa-2xl"></i></a>
+                <a href="https://twitter.com/T3League2022" class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="https://www.twitch.tv/lemooons1_1" class="fa-brands fa-twitch fa-2xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCcezXBNJGCLRmtCEFor0mzw" class="fa-brands fa-youtube fa-2xl"></i></a>
+            </div>
+            <div class="footer-text">
+                T3 League © 2022
+            </div>
+        
+        </div>
+    <!--Footer End-->
+</body>
+</html>

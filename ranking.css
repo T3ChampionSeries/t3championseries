@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&family=Manrope&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+a{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.t3leaguerankings{
+    color: black;
+    font-family: 'Anek Latin', sans-serif;
+    text-transform: uppercase;
+    padding-top: 140px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.t3leaguerankings hr{
+    border: none;
+    height: 4px;
+    color: lightskyblue;
+    background-color: lightskyblue;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.image>img{
+    margin-top: 200px;
+}
+
+.image{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Anek Latin', sans-serif;
+    text-transform: uppercase;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.tableclass{
+    padding-top: 50px;
+    border-collapse: collapse;
+}
+
+
+.tableclass thead tr {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: #333333;
+    text-align: left;
+}
+
+.tableclass thead th{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    height: 40px;
+}
+
+.tableclass tbody td{
+    font-family: 'Anek Latin', sans-serif;
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+
+.tableclass tbody tr{
+    border-bottom: 0.1px solid rgba(128, 122, 122, 0.175);
+}
+
+.rank-table{
+    width:10px;
+    text-align: center;
+}
+
+.team-table{
+    text-align: left;
+    white-space: nowrap;
+}
+
+.win-table{
+    text-align: center;
+}
+
+.lose-table{
+    text-align: center;
+    font-weight: bold;
+}
+
+.point-table{
+    text-align: center;
+}
+
+.diff-table{
+    font-weight: bold;
+    text-align: center;
+}
+
+.empty-box{
+    height: 100px;
+}
+
+.team-icon{
+    width: 40px;
+    max-height: 40px;
+    height: 100%;
+}
